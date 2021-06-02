@@ -1,0 +1,36 @@
+package id.go.babelprov.moviecatalogues5.viewmodel;
+
+import androidx.annotation.Nullable;
+import androidx.lifecycle.MediatorLiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModel;
+
+import id.go.babelprov.moviecatalogues5.model.TvshowsResponse;
+import id.go.babelprov.moviecatalogues5.repository.DataRepository;
+
+
+public class TvshowOnTheAirViewModel extends ViewModel {
+
+    private MediatorLiveData<TvshowsResponse> mediatorLiveDataTvshowsResponse;
+    private DataRepository tvshowsRepository;
+
+    public TvshowOnTheAirViewModel() {
+        mediatorLiveDataTvshowsResponse = new MediatorLiveData<>();
+        tvshowsRepository = new DataRepository();
+    }
+
+    public void setTvshowOnTheAir() {
+        mediatorLiveDataTvshowsResponse.addSource(tvshowsRepository.getTvshowOnTheAir(), new Observer<TvshowsResponse>() {
+            @Override
+            public void onChanged(@Nullable TvshowsResponse tvshowsResponse)            {
+                mediatorLiveDataTvshowsResponse.setValue(tvshowsResponse);
+            }
+        });
+    }
+
+
+    public MutableLiveData<TvshowsResponse> getTvshowOnTheAir() {
+        return mediatorLiveDataTvshowsResponse;
+    }
+}

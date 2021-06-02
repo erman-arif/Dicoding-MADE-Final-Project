@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Favorite Catalogue</string>
+
+    <!--ABOUT-->
+    <string name="about_nama">Erman Arif</string>
+    <string name="about_email">mr.erman.arif@gmail.com</string>
+    <string name="about_pelatihan">Online Academy (OA)</string>
+    <string name="about_materi">Google - Android</string>
+    <string name="about_registrasi">0416159091-4</string>
+    <string name="about_asal">Provinsi Kepulauan Bangka Belitung</string>
+    <string name="about_kelas">MADE</string>
+    <string name="about_tugas">Final Project</string>
+    <string name="about_judul">Favorite Catalogue</string>
+    <string name="about_photo">Author Photo</string>
+    <string name="about_program">Program</string>
+
+    <!--MENU NAVIGATION DRAWER-->
+    <string name="navigation_drawer_open">Navigation drawer open</string>
+    <string name="navigation_drawer_close">navigation drawer close</string>
+    <string name="nav_header_title">Favorite Movie and TV Show (Final Project)</string>
+    <string name="nav_header_subtitle">mr.erman.arif@gmail.com</string>
+    <string name="nav_header_desc">Favorite Movie and TV Show Catalogue</string>
+    <string name="menu_movies">Favorite Movies</string>
+    <string name="menu_tvshows"> FavoriteTV Shows</string>
+    <string name="menu_about">About</string>
+    <string name="setting">Setting</string>
+
+    <!--MENU ACTION BAR-->
+    <string name="change_language">Change Language</string>
+
+    <!--TITLE ACTION BAR-->
+    <string name="title_movie">Favorite Movies</string>
+    <string name="title_tvshow">Favorite TV Shows</string>
+
+    <!--TABLAYOUT -->
+    <string name="nowplaying">Now Playing</string>
+    <string name="ontheair">On The Air</string>
+    <string name="toprated">Top Rated</string>
+    <string name="favorite">Favorite</string>
+
+    <!--DETAIL MOVIE & TV SHOW-->
+    <string name="poster">Poster</string>
+    <string name="genre">Genre</string>
+    <string name="popularity">Popularity</string>
+    <string name="votecount">Vote Count</string>
+    <string name="overview">Overview</string>
+
+    <!--MOVIE-->
+    <string name="title">Title</string>
+    <string name="release">Release</string>
+
+    <!--TV SHOW-->
+    <string name="name">Name</string>
+    <string name="airdate">Air Date</string>
+
+    <!--SET LANGUAGE-->
+    <string name="english_lang">English</string>
+    <string name="indonesia_lang">Indonesia</string>
+    <string name="apply_change">Apply</string>
+
+    <!--ETC-->
+    <string name="fullscreen_poster">Fullscreen</string>
+    <string name="conection_error">Network Error</string>
+    <string name="data_empty">Data Empty</string>
+    <string name="add_favorite">Add Favorite</string>
+
+    <string name="package_moviecatalogue_not_exist">App Movie Catalogue not Exist</string>
+</resources>

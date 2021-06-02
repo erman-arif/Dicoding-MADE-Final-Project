@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_bottom_movies"
+        android:icon="@drawable/ic_menu_movies"
+        android:title="@string/menu_movies" />
+
+    <item
+        android:id="@+id/nav_bottom_tvshows"
+        android:icon="@drawable/ic_menu_tvshows"
+        android:title="@string/menu_tvshows" />
+
+    <item
+        android:id="@+id/nav_bottom_about"
+        android:icon="@drawable/ic_menu_about"
+        android:title="@string/menu_about" />
+
+</menu>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Favorite Catalogue</string>
+
+    <!--ABOUT-->
+    <string name="about_nama">Erman Arif</string>
+    <string name="about_email">mr.erman.arif@gmail.com</string>
+    <string name="about_pelatihan">Online Academy (OA)</string>
+    <string name="about_materi">Google - Android</string>
+    <string name="about_registrasi">0416159091-4</string>
+    <string name="about_asal">Provinsi Kepulauan Bangka Belitung</string>
+    <string name="about_kelas">MADE</string>
+    <string name="about_tugas">Tugas Akhir</string>
+    <string name="about_judul">Katalog Film Favorit</string>
+    <string name="about_photo">Foto Pembuat</string>
+    <string name="about_program">Program</string>
+
+    <!--MENU NAVIGATION DRAWER-->
+    <string name="navigation_drawer_open">Navigation drawer terbuka</string>
+    <string name="navigation_drawer_close">navigation drawer tertutup</string>
+    <string name="nav_header_title">Katalog Film dan TV (API)</string>
+    <string name="nav_header_subtitle">mr.erman.arif@gmail.com</string>
+    <string name="nav_header_desc">Aplikasi Katalog Film dan TV</string>
+    <string name="menu_movies">Film</string>
+    <string name="menu_tvshows">Siaran TV</string>
+    <string name="menu_about">Tentang Kami</string>
+    <string name="setting">Pengaturan</string>
+
+    <!--MENU ACTION BAR-->
+    <string name="change_language">Ganti Bahasa</string>
+
+    <!--TITLE ACTION BAR-->
+    <string name="title_movie">Film Favorit</string>
+    <string name="title_tvshow">Siaran TV Favorit</string>
+
+    <!--TABLAYOUT -->
+    <string name="nowplaying">Sedang Tayang</string>
+    <string name="ontheair">Sedang Mengudara</string>
+    <string name="toprated">Rating Tertinggi</string>
+    <string name="favorite">Favorit</string>
+
+    <!--DETAIL MOVIE & TV SHOW-->
+    <string name="poster">Poster</string>
+    <string name="genre">Aliran</string>
+    <string name="popularity">Populer</string>
+    <string name="votecount">Vote</string>
+    <string name="overview">Keterangan</string>
+
+    <!--MOVIE-->
+    <string name="title">Judul</string>
+    <string name="release">Tanggal Tayang</string>
+
+    <!--TV SHOW-->
+    <string name="name">Nama</string>
+    <string name="airdate">Tanggal Mengudara</string>
+
+    <!--SET LANGUAGE-->
+    <string name="english_lang">English</string>
+    <string name="indonesia_lang">Indonesia</string>
+    <string name="apply_change">Terapkan</string>
+
+    <!--ETC-->
+    <string name="fullscreen_poster">Layar Penuh</string>
+    <string name="conection_error">Koneksi Error</string>
+    <string name="data_empty">Data Kosong</string>
+    <string name="add_favorite">Tambah Favorite</string>
+
+    <string name="package_moviecatalogue_not_exist">Aplikasi Katalog Film belum di install</string>
+
+</resources>

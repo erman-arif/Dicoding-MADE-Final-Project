@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/about_photo"
+                android:src="@drawable/erman_arif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:text="@string/about_nama"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text="@string/about_email"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/about_program"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/about_pelatihan"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:text="Kelas"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/about_materi"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:textSize="14sp"
+                        android:text="No. Registrasi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/about_registrasi"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Daerah Asal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_weight="2"
+                        android:textSize="14sp"
+                        android:text="@string/about_asal"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Kelas"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_weight="2"
+                        android:textSize="14sp"
+                        android:text="@string/about_kelas"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Tugas"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_weight="2"
+                        android:textSize="14sp"
+                        android:text="@string/about_tugas"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow style="@style/trAbout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Judul Apps"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_weight="2"
+                        android:textSize="14sp"
+                        android:text="@string/about_judul"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

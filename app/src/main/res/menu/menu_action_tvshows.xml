@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_search_tvshows"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_tvshows"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/change_language"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="@string/change_language"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/setting_reminder"
+        android:icon="@drawable/ic_menu_movies"
+        android:title="@string/setting_reminder"
+        app:showAsAction="collapseActionView" />
+</menu>

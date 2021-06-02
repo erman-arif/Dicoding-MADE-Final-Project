@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#C7C7C7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_icon_tvshow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/fullscreen_poster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:srcCompat="@drawable/ic_menu_tvshows" />
+
+        <TextView
+            android:id="@+id/tv_dtl_tvshow_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTitle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_tvshow"
+            app:layout_constraintTop_toTopOf="@+id/iv_icon_tvshow" />
+
+        <TextView
+            android:id="@+id/tv_dtl_tvshow_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genre"
+            app:layout_constraintStart_toStartOf="@+id/tv_dtl_tvshow_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dtl_tvshow_name" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/brrHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tv_dtl_tvshow_genre,tv_dtl_tvshow_name,iv_icon_tvshow"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <View
+            android:id="@+id/v_separator_header"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFDFB0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/brrHeader" />
+
+        <!--POSTER-->
+        <ImageView
+            android:id="@+id/iv_dtl_tvshow_poster"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/poster"
+            android:scaleType="fitStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_separator_header"
+            app:layout_constraintWidth_percent="0.5"
+            android:onClick="showFullPoster"
+            tools:srcCompat="@tools:sample/avatars[14]" />
+
+        <!--LABEL RELEASE-->
+        <TextView
+            android:id="@+id/tv_lbl_dtl_tvshow_airdate"
+            style="@style/labelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/airdate"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/iv_dtl_tvshow_poster"
+            app:layout_constraintTop_toTopOf="@+id/iv_dtl_tvshow_poster" />
+
+        <!--RELEASE-->
+        <TextView
+            android:id="@+id/tv_dtl_tvshow_airdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/airdate"
+            app:layout_constraintStart_toStartOf="@+id/tv_lbl_dtl_tvshow_airdate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_dtl_tvshow_airdate" />
+
+
+        <!--LABEL PUBLISHER-->
+        <TextView
+            android:id="@+id/tv_lbl_dtl_tvshow_popularity"
+            style="@style/labelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/popularity"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_dtl_tvshow_airdate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dtl_tvshow_airdate" />
+
+        <TextView
+            android:id="@+id/tv_dtl_tvshow_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popularity"
+            app:layout_constraintStart_toStartOf="@+id/tv_lbl_dtl_tvshow_popularity"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_dtl_tvshow_popularity" />
+
+        <TextView
+            android:id="@+id/tv_lbl_dtl_tvshow_votecount"
+            style="@style/labelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/votecount"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_dtl_tvshow_popularity"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dtl_tvshow_popularity" />
+
+        <TextView
+            android:id="@+id/tv_dtl_tvshow_votecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/votecount"
+            app:layout_constraintStart_toStartOf="@+id/tv_lbl_dtl_tvshow_votecount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_dtl_tvshow_votecount" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/brrPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="iv_dtl_tvshow_poster,tv_dtl_tvshow_votecount"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <TextView
+            android:id="@+id/tv_lbl_dtl_tvshow_overview"
+            style="@style/labelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/overview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/brrPoster" />
+
+        <TextView
+            android:id="@+id/tv_dtl_tvshow_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/overview"
+            app:layout_constraintStart_toStartOf="@+id/tv_lbl_dtl_tvshow_overview"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_dtl_tvshow_overview" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#80000000"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_dtl_tvshow_poster"
+            app:layout_constraintEnd_toEndOf="@+id/iv_dtl_tvshow_poster"
+            app:layout_constraintStart_toStartOf="@+id/iv_dtl_tvshow_poster" />
+
+        <ImageView
+            android:id="@+id/iv_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/fullscreen_poster"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/view3"
+            app:srcCompat="@android:drawable/ic_menu_zoom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullscreen_poster"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_zoom"
+            app:layout_constraintStart_toEndOf="@+id/iv_zoom"
+            app:layout_constraintTop_toTopOf="@+id/iv_zoom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
